@@ -3,13 +3,15 @@ https://cdn.plyr.io/3.7.8/plyr.css
 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://cdn.plyr.io/3.7.8/plyr.css');
+/* Rubik Spray */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
 /* CSS Variables */
 :root {
-  --plyr-color-main: red;
+  --plyr-color-main: rgb(157, 149, 4);
     /* audio controls background */
-    --plyr-audio-controls-background: black;
+    --plyr-audio-controls-background: rgb(34, 34, 34);
     /* audio controls color */
-    --plyr-audio-control-color: white;
+    --plyr-audio-control-color: rgb(135, 158, 6);
 
     --plyr-audio-control-color-hover: black;
 
@@ -27,16 +29,18 @@ https://cdn.plyr.io/3.7.8/plyr.css
 }
 
 body {
-  background-image: url(https://assets.codepen.io/16425/blackbg.jpg);
-  background-repeat: repeat;
+  background-image: url("../media/9bQZck.png");
+  background-size: cover;
+  font-family:Rubik Spray Paint, Open Sans,Helvetica,Arial,sans-serif;
+
 }
 
 /* Layout */
 main {
-  background-color: #b7142fbd; 
+  background-color: #777676bd; 
   max-width: 1000px;
   margin-inline: auto;
-  font-family:Open Sans,Helvetica,Arial,sans-serif;
+  font-family:Rubik Spray Paint, Open Sans,Helvetica,Arial,sans-serif;
 }
 
 main img {
@@ -44,9 +48,11 @@ main img {
     display: block;
 }
 
-main h1 {
-  color: white;
+h1 {
+  color: rgb(173, 179, 4);
   text-align: center;
+  font-weight: normal; 
+  letter-spacing: 0.1em; 
 }
 
 main article {
@@ -54,7 +60,7 @@ main article {
   gap: 1em;
   flex-wrap: wrap;
   justify-content: center;
-  
+  margin-bottom: 6em;
   margin-top: 60px;
 }
 
@@ -67,10 +73,33 @@ main article figure {
   width: 15rem
 }
 
-audio {
-  background-color: white;
-  padding: 1.5em;
-  border: solid 1em white;
-  border-radius: 1em;
- 
+#instrumental {
+  background: darkgray;
+  padding: 1em;
+  margin: 0;
+  border: solid 0.4em;
+  border-radius: 0.5em;
+  width: 90%;
+  height: 3rem;
+  text-align: center;
+  font-size: larger;
 }
+
+audio { 
+  position: fixed; 
+  bottom: 0;
+  margin: 0;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  background: #242323;
+  padding: 0.75em;
+  z-index: 5;
+  margin: 0;
+}
+
+
