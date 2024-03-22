@@ -5,24 +5,31 @@ https://cdn.plyr.io/3.7.8/plyr.css
 @import url('https://cdn.plyr.io/3.7.8/plyr.css');
 /* Rubik Spray */
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Slackey&display=swap');
 /* CSS Variables */
 :root {
-  --plyr-color-main: rgb(157, 149, 4);
+  --color1: #222222; 
+  --color2: #9d9504; 
+  --color3: #585858; 
+  --color4: #5a5f05; 
+  --color5: #cfc6c6; 
+ 
+  --plyr-color-main: var(--color2);
     /* audio controls background */
-    --plyr-audio-controls-background: rgb(34, 34, 34);
+    --plyr-audio-controls-background: var(--color1);
     /* audio controls color */
-    --plyr-audio-control-color: rgb(135, 158, 6);
+    --plyr-audio-control-color: var(--color2);
 
-    --plyr-audio-control-color-hover: black;
+    --plyr-audio-control-color-hover: var(--color3);
 
-    --plyr-audio-progress-buffered-background: blue;
+    --plyr-audio-progress-buffered-background: var(--color4);
 
-    --plyr-audio-range-track-background: darkred;
+    --plyr-audio-range-track-background: var(--color4);
     
-    --plyr-font-family: sans-serif;
-    --plyr-font-size-time: 32px;
+    --plyr-font-family: Slackey, Open Sans,Helvetica,Arial,sans-serif;
+    --plyr-font-size-time: 1.5rem;
 
-    --plyr-tooltip-background: red;
+    --plyr-tooltip-background: rgb(88, 86, 86);
     --plyr-tooltip-color: black; 
 
     --plyr-control-icon-size: 32px;
@@ -52,7 +59,13 @@ h1 {
   color: rgb(173, 179, 4);
   text-align: center;
   font-weight: normal; 
-  letter-spacing: 0.1em; 
+  /* letter-spacing: 0.1em;  */
+  font-family: Slackey, Open Sans,Helvetica,Arial,sans-serif;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 main article {
@@ -68,9 +81,18 @@ main article figure {
   background: darkgray;
   padding: 1em;
   margin: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
   border: solid 0.4em;
   border-radius: 0.5em;
-  width: 15rem
+  width: 15rem;
+  font-weight: lighter;
+  opacity: 0; 
+
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 
 #instrumental {
@@ -100,6 +122,24 @@ audio {
   padding: 0.75em;
   z-index: 5;
   margin: 0;
+}
+
+.header {
+  background-color: var(--color3);
+  padding: 1em;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 5%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 
