@@ -51,15 +51,18 @@ main {
 }
 
 main img {
-    max-width: 100%;
+    max-width: 90%;
     display: block;
+    margin: auto;
+    margin-top: 2em;
+    border: solid 0.4em var(--color1);
+    border-radius: 0.5em;
 }
 
 h1 {
-  color: rgb(173, 179, 4);
+  color: var(--color2);
   text-align: center;
   font-weight: normal; 
-  /* letter-spacing: 0.1em;  */
   font-family: Slackey, Open Sans,Helvetica,Arial,sans-serif;
   opacity: 0;
   animation-name: fadeIn;
@@ -74,19 +77,21 @@ main article {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 6em;
-  margin-top: 60px;
+  margin-top: 2em;
 }
 
-main article figure {
-  background: darkgray;
+figure {
+  background: var(--color5);
   padding: 1em;
   margin: 0;
   margin-top: 1em;
   margin-bottom: 1em;
-  border: solid 0.4em;
+  letter-spacing: 0.1em;
+  border: solid 0.4em var(--color1);
   border-radius: 0.5em;
   width: 15rem;
   font-weight: lighter;
+  color: var(--color1);
   opacity: 0; 
 
   animation-name: fadeIn;
@@ -96,7 +101,6 @@ main article figure {
 }
 
 #instrumental {
-  background: darkgray;
   padding: 1em;
   margin: 0;
   border: solid 0.4em;
@@ -131,6 +135,19 @@ audio {
   top: 0;
   left: 0;
   border-radius: 5%;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Slackey, Open Sans,Helvetica,Arial,sans-serif;
+
+}
+
+.trivia {
+  width: 80%
 }
 
 @keyframes fadeIn {

@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css">
 
     <!-- Scripts -->
@@ -25,27 +25,48 @@
   </div>
 </header>
 <body>
-    <script src="scripts/script.js"></script>
+    <script src="../scripts/script.js"></script>
     <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-    
-        <main>
-
-            
+    <div class="nav">
+        <figure>
+          <p><a href="/"><i>Lyrics Page</i></a></p>
+        </figure>
+      </div>
+        <main> 
+            <img src="../media/Arctic-Monkeys-Credit-Gabriel-Olsen-Getty-Images-for-Radio-com@2000x1500.jpg" alt="Band Image">
             <article>
+                <!-- Reusing instrumental id,  I know it has a bad name -->
+                <figure id="instrumental"> 
+                    <p>Trivia</p>
+                </figure>
+
+                <figure class="trivia">
+                    <p>505 is a song written by <i> The Arctic Monkeys</i></p>
+                    <p>The song was released in 2007 and was one of the more popular songs on the album, <i>Favourite Worst Nightmare</i></p>
+                </figure>
+
+                <figure class="trivia">
+                    <p>The song is about the lead vocalist, Alex Turner, missing his former girlfriend while on tour</p>
+                    <p>The name "505" was said to come from the number of her room</p>
+                </figure>
+
+                <figure class="trivia">
+                    <p>The song was written in 4/4 time at 140 beats per minute</p>
+                    <p>It was recorded in the key of C major</p>
+                    <p>Some of the background chords played in the song are sampled from <i>The Good, the Bad, and the Ugly</i></p>
+                </figure>
 
 
 
 
-
-
-                
             </article>
           
             <div class="fixed">
-            <audio id="player"
+                <audio id="player"
                    src="/media/youtube_MrmPDUvKyLs_audio.mp3"
-                   controls></audio>
-                  </div>
+                   controls>
+                </audio>
+            </div>
             
           </main>
         </body>
