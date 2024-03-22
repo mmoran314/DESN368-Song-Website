@@ -9,5 +9,6 @@ Netlify URL: https://desn368mmsongwebsite.netlify.app
 * [Favicon Image](https://www.amazon.com/AM-Arctic-Monkeys/dp/B00DKY4LBW)
 * [Favicon Generator](https://favicon.io)
 * [Band Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fguitar.com%2Freviews%2Falbum%2Fthe-genius-of-am-by-arctic-monkeys%2F&psig=AOvVaw0QTWyKR4p5X1UrqmAoranK&ust=1711219729256000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIjYzbPEiIUDFQAAAAAdAAAAABAo)
+* [Lyrics and Trivia](https://en.wikipedia.org/wiki/505_(song))
 
 
