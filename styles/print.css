@@ -1,4 +1,7 @@
 @media print {
+    h1 {
+        color: black;
+    }
     body {
         color: black;
     }
@@ -21,6 +24,13 @@
     }
     figure {
         break-inside: avoid;
+        overflow: auto;
+        clear: both;
+    }
+    article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
 
