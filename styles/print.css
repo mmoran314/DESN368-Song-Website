@@ -1,0 +1,33 @@
+@media print {
+    body {
+        color: black;
+    }
+    /* hide */
+    audio {
+        display: none !important;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    /* print links */
+    a[href]::after {
+        content: " Link " attr( href )
+    }
+    
+    .fixed {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0;
+    }
+    figure {
+        break-inside: avoid;
+    }
+    
+
+    /* paper sizing */
+    @page {
+        margin: 1in;
+    }
+    
+
+}
