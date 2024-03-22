@@ -11,6 +11,12 @@
         visibility: hidden;
         opacity: 0;
     }
+    img {
+        display: none !important;
+        visibility: hidden;
+        opacity: 0;
+    
+    };
     
     /* print links */
     a[href]::after {
