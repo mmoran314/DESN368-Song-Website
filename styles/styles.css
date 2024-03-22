@@ -57,6 +57,9 @@ main img {
     margin-top: 2em;
     border: solid 0.4em var(--color1);
     border-radius: 0.5em;
+    opacity: 0;
+
+    animation: fadeIn 3s 3s forwards;
 }
 
 h1 {
